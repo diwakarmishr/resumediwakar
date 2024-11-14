@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwakar Mishra - Profile</title>
+    <link rel="stylesheet" href="sewa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diwakar Mishra</h1>
+            <p>Cricket Captain</p>
+            <button class="download-btn" onclick="downloadResume()">Download Resume</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#achievements">Achievements</a>
+                <ul class="dropdown-content">
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Diwakar Mishra, an all-rounder with excellent achievements in academics and sports.</p>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2>Key Achievements</h2>
+            <div id="academics">
+                <h3>Academics</h3>
+                <ul>
+                    <li>1200 rank in SRMJEEE</li>
+                    <li>12000 rank in VITEEE</li>
+                    <li>256 scored in BITSAT</li>
+                    <li>General expertise in different subjects</li>
+                </ul>
+            </div>
+            <div id="sports">
+                <h3>Sports</h3>
+                <ul>
+                    <li>Played cricket U16 semi-finalist for Mumbai University</li>
+                    <li>Athletics: Gold Medal in Kabaddi, Gold in Chess</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p><strong>Email:</strong> <a href="mailto:diwakarmishra739@gmail.com">diwakarmishra739@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+917977373941">+91 79773 73941</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diwakar-mishra-02239626a/" target="_blank">Diwakar's LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <h3>Chat with me</h3>
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function downloadResume() {
+            window.open('"C:\\Users\\universe@316\\Desktop\\New folder\\Diwakar Mishra-Profile.pdf.pdf"', '_blank');
+        }
+
+        function sendMessage() {
+            let message = document.getElementById('chatInput').value;
+            alert("Message sent: " + message);
+        }
+    </script>
+</body>
+</html>
+
+
+

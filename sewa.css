@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #060e10; /* Changed to a lighter, soothing color */
+}
+
+header {
+    background: linear-gradient(to right, #005a3f, #c7e7c5); /* Darker green with a soft pastel */
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(17, 6, 23);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 1.2rem;
+}
+
+.download-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+nav ul {
+    background: #222; /* Darkened for contrast with other colors */
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.about-section, .achievements-section, .contact-section {
+    padding: 20px;
+    background-color: #ffffff; /* Keeps sections a clean white */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, .achievements-section h2, .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#chatbox {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background: #ffffff; /* Keeps chatbox a clean white */
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
